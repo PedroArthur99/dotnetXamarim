@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="clinicasubs.MainPage">
+
+    <StackLayout Orientation="Vertical" Padding="10">
+        <Label Text="Meus exames"
+               FontSize="22"
+               HorizontalOptions="Center"/>
+        <ListView x:Name="listExames">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <FlexLayout Direction="Row">
+                            <Label Text="{Binding Id}"/>
+                            <Label Text="{Binding Cpf}"/>
+                            <Label Text="{Binding NomePaciente}"/>
+                            <Label Text="{Binding resultado}"/>
+                            <Label Text="{Binding dataExame}"/>
+                        </FlexLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>            
+        </ListView>
+
+        <Entry x:Name="entId" />
+        <Entry x:Name="entCpf" />
+        <Entry x:Name="entName" />
+        <Entry x:Name="entResult" />
+        <Entry x:Name="entData" />
+        <Button x:Name="btnNewExame" Text="Cadastrar" Clicked="btnNewExame_Clicked"/>
+
+    </StackLayout>
+
+    
+
+</ContentPage>

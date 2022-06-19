@@ -1,0 +1,1 @@
+C:\Users\pedro\source\repos\clinicasubs\clinicasubs\clinicasubs.UWP\clinicasubs.UWP.csproj;x64
